@@ -1,4 +1,4 @@
-package Acme::MorningMusume::MizukiFukumura;
+package Acme::MorningMusume::FukumuraMizuki;
 
 use strict;
 use warnings;

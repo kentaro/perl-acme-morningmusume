@@ -34,10 +34,10 @@ my @members = qw(
     MitsuiAika
     LiChun
     QianLin
-    KanonSuzuki
-    ErinaIkuta
-    MizukiFukumura
-    RihoSayashi
+    SuzukiKanon
+    IkutaErina
+    FukumuraMizuki
+    SayashiRiho
     IikuboHaruna
     IshidaAyumi
     SatohMasaki
@@ -254,7 +254,7 @@ Kentaro Kuribayashi E<lt>kentaro@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE (The MIT License)
 
-Copyright (c) 2005 - 2009, Kentaro Kuribayashi
+Copyright (c) 2005 - 2013, Kentaro Kuribayashi
 E<lt>kentaro@cpan.orgE<gt>
 
 Permission is hereby granted, free of charge, to any person obtaining

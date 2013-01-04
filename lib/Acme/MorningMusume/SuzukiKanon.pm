@@ -1,4 +1,4 @@
-package Acme::MorningMusume::KanonSuzuki;
+package Acme::MorningMusume::SuzukiKanon;
 
 use strict;
 use warnings;

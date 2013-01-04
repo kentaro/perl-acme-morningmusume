@@ -1,4 +1,4 @@
-package Acme::MorningMusume::RihoSayashi;
+package Acme::MorningMusume::SayashiRiho;
 
 use strict;
 use warnings;

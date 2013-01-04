@@ -1,4 +1,4 @@
-package Acme::MorningMusume::ErinaIkuta;
+package Acme::MorningMusume::IkutaErina;
 
 use strict;
 use warnings;

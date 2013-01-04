@@ -1,3 +1,6 @@
+sub author_tests {}
+sub auto_set_repository {}
+
 use inc::Module::Install;
 
 name     'Acme-MorningMusume';
