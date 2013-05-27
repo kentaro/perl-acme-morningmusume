@@ -19,7 +19,7 @@ sub info {
         hometown       => '福岡県',
         emoticon       => ['从 ´ ヮ｀)', '从 `,_っ´)'],
         class          => 6,
-        graduate_date  => undef,
+        graduate_date  => Date::Simple->new('2013-05-21'),
     );
 }
 
