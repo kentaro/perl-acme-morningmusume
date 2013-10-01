@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Maki',
         family_name_en => 'Gotoh',
         nick           => [qw(ごっちん)],
-        birthday       => Date::Simple->new('1985-09-23'),
+        birthday       => $_[0]->_datetime_from_date('1985-09-23'),
         blood_type     => 'O',
         hometown       => '東京都',
         emoticon       => ['（ ´ Д ｀)'],
         class          => 3,
-        graduate_date  => Date::Simple->new('2002-09-23'),
+        graduate_date  => $_[0]->_datetime_from_date('2002-09-23'),
     );
 }
 

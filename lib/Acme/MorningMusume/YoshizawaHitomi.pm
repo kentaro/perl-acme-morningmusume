@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Hitomi',
         family_name_en => 'Yoshizawa',
         nick           => [qw(よっすぃー)],
-        birthday       => Date::Simple->new('1985-04-12'),
+        birthday       => $_[0]->_datetime_from_date('1985-04-12'),
         blood_type     => 'O',
         hometown       => '埼玉県',
         emoticon       => ['（０＾～＾）'],
         class          => 4,
-        graduate_date  => Date::Simple->new('2007-05-06'),
+        graduate_date  => $_[0]->_datetime_from_date('2007-05-06'),
     );
 }
 

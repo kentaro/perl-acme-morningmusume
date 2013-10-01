@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Haruka',
         family_name_en => 'Kudoh',
         nick           => [qw(くどぅー)],
-        birthday       => Date::Simple->new('1999-10-27'),
+        birthday       => $_[0]->_datetime_from_date('1999-10-27'),
         blood_type     => 'A',
         hometown       => '埼玉県',
         emoticon       => [''],

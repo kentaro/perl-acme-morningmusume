@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Nozomi',
         family_name_en => 'Tsuji',
         nick           => [qw(のの ののたん)],
-        birthday       => Date::Simple->new('1987-06-17'),
+        birthday       => $_[0]->_datetime_from_date('1987-06-17'),
         blood_type     => 'O',
         hometown       => '東京都',
         emoticon       => ['（ ´ⅴ｀）'],
         class          => 4,
-        graduate_date  => Date::Simple->new('2004-08-01'),
+        graduate_date  => $_[0]->_datetime_from_date('2004-08-01'),
     );
 }
 

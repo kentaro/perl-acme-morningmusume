@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Kaori',
         family_name_en => 'Iida',
         nick           => [qw(かおりん ジョンソン)],
-        birthday       => Date::Simple->new('1981-08-08'),
+        birthday       => $_[0]->_datetime_from_date('1981-08-08'),
         blood_type     => 'A',
         hometown       => '北海道',
         emoticon       => ['川 ’～’）||', '川 ﾟ～ﾟﾉ||', '（　゜皿 ゜）'],
         class          => 1,
-        graduate_date  => Date::Simple->new('2005-01-30'),
+        graduate_date  => $_[0]->_datetime_from_date('2005-01-30'),
     );
 }
 

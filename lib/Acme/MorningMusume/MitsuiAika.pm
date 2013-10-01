@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Aika',
         family_name_en => 'Mitsui',
         nick           => [qw(ミッチー)],
-        birthday       => Date::Simple->new('1993-01-12'),
+        birthday       => $_[0]->_datetime_from_date('1993-01-12'),
         blood_type     => 'O',
         hometown       => '滋賀県',
         emoticon       => ['川=´┴｀)'],
         class          => 8,
-        graduate_date  => Date::Simple->new('2012-05-18'),
+        graduate_date  => $_[0]->_datetime_from_date('2012-05-18'),
     );
 }
 

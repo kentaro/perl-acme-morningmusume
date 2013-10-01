@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Kanon',
         family_name_en => 'Suzuki',
         nick           => [qw(ズッキ)],
-        birthday       => Date::Simple->new('1998-08-05'),
+        birthday       => $_[0]->_datetime_from_date('1998-08-05'),
         blood_type     => 'B',
         hometown       => '愛知県',
         emoticon       => ['从*´◇｀）'],

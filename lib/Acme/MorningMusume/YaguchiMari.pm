@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Mari',
         family_name_en => 'Yaguchi',
         nick           => [qw(まりっぺ やぐたん)],
-        birthday       => Date::Simple->new('1983-01-20'),
+        birthday       => $_[0]->_datetime_from_date('1983-01-20'),
         blood_type     => 'A',
         hometown       => '神奈川県',
         emoticon       => ['（～＾◇＾～）', '（～＾◇＾）'],
         class          => 2,
-        graduate_date  => Date::Simple->new('2005-04-14'),
+        graduate_date  => $_[0]->_datetime_from_date('2005-04-14'),
     );
 }
 

@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Reina',
         family_name_en => 'Tanaka',
         nick           => [qw(れいにゃ)],
-        birthday       => Date::Simple->new('1989-11-11'),
+        birthday       => $_[0]->_datetime_from_date('1989-11-11'),
         blood_type     => 'O',
         hometown       => '福岡県',
         emoticon       => ['从 ´ ヮ｀)', '从 `,_っ´)'],
         class          => 6,
-        graduate_date  => Date::Simple->new('2013-05-21'),
+        graduate_date  => $_[0]->_datetime_from_date('2013-05-21'),
     );
 }
 

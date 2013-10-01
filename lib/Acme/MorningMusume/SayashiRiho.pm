@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Riho',
         family_name_en => 'Sayashi',
         nick           => [qw(やっしー)],
-        birthday       => Date::Simple->new('1998-05-28'),
+        birthday       => $_[0]->_datetime_from_date('1998-05-28'),
         blood_type     => 'AB',
         hometown       => '広島県',
         emoticon       => ['ﾉﾘ*´ｰ´ﾘ', 'ﾉﾉs‘ _‘）'],

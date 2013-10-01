@@ -14,12 +14,12 @@ sub info {
         first_name_en     => 'Ai',
         family_name_en    => 'Takahashi',
         nick           => [qw(愛ちゅん)],
-        birthday       => Date::Simple->new('1986-09-14'),
+        birthday       => $_[0]->_datetime_from_date('1986-09-14'),
         blood_type     => 'A',
         hometown       => '福井県',
         emoticon       => ['川’ー’川'],
         class          => 5,
-        graduate_date  => Date::Simple->new('2011-09-30'),
+        graduate_date  => $_[0]->_datetime_from_date('2011-09-30'),
     );
 }
 

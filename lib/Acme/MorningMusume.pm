@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Carp  qw(croak);
-use Date::Simple ();
+use DateTime;
 
 our $VERSION = '0.16';
 
@@ -45,7 +45,14 @@ my @members = qw(
     OdaSakura
 );
 
-my @date_joined = map { Date::Simple->new($_) } qw(
+my @date_joined = map {
+    my ($year, $month, $day) = ($_ =~ /(\d{4})-(\d{2})-(\d{2})/);
+    DateTime->new(
+        year  => $year,
+        month => $month,
+        day   => $day,
+    );
+} qw(
     1997-09-07
     1998-05-03
     1999-08-04
@@ -81,7 +88,7 @@ sub members {
     elsif ($type eq 'graduate') {
         return grep {$_->graduate_date}  @members;
     }
-    elsif ($type->isa('Date::Simple')) {
+    elsif ($type->isa('DateTime')) {
         return grep {
             $date_joined[$_->class] <= $type and
             (!$_->graduate_date or $type <= $_->graduate_date)
@@ -150,7 +157,7 @@ Acme::MorningMusume - All about Japanese pop star "Morning Musume"
   my @members              = $musume->members;             # retrieve all
   my @active_members       = $musume->members('active');
   my @graduate_members     = $musume->members('graduate');
-  my @at_some_time_members = $musume->members(Date::Simple->new('2001-01-01'));
+  my @at_some_time_members = $musume->members(DateTime->now->subtract(years => 5));
 
   # retrieve the members under some conditions
   my @sorted_by_age        = $musume->sort('age', 1);
@@ -188,7 +195,7 @@ Creates and returns a new Acme::MorningMusume object.
   # $type can be one of the values below:
   #  + active              : active members
   #  + graduate            : graduate members
-  #  + Date::Simple object : members at the time passed in
+  #  + DateTime object     : members at the time passed in
   #  + undef               : all members
 
   my @members = $musume->members('active');
@@ -250,7 +257,13 @@ L<http://en.wikipedia.org/wiki/Morning_Musume>
 
 =head1 AUTHOR
 
-Kentaro Kuribayashi E<lt>kentaro@cpan.orgE<gt>
+=over 4
+
+=item * Kentaro Kuribayashi E<lt>kentaro@cpan.orgE<gt>
+
+=item * Kaneko Tatsuya L<https://github.com/catatsuy>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE (The MIT License)
 

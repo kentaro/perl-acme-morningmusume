@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Erina',
         family_name_en => 'Ikuta',
         nick           => [qw(えりぽん)],
-        birthday       => Date::Simple->new('1997-07-07'),
+        birthday       => $_[0]->_datetime_from_date('1997-07-07'),
         blood_type     => 'A',
         hometown       => '福岡県',
         emoticon       => ['|||9|‘_ゝ‘)'],

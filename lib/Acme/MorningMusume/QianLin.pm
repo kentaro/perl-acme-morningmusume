@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Lin',
         family_name_en => 'Qian',
         nick           => [qw(リンリン)],
-        birthday       => Date::Simple->new('1991-03-11'),
+        birthday       => $_[0]->_datetime_from_date('1991-03-11'),
         blood_type     => 'unknown',
         hometown       => '中国浙江省',
         emoticon       => ['川*^A^)'],
         class          => 8,
-        graduate_date  => Date::Simple->new('2010-12-15'),
+        graduate_date  => $_[0]->_datetime_from_date('2010-12-15'),
     );
 }
 

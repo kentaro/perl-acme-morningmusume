@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Koharu',
         family_name_en => 'Kusumi',
         nick           => [qw(こは くすみん)],
-        birthday       => Date::Simple->new('1992-07-15'),
+        birthday       => $_[0]->_datetime_from_date('1992-07-15'),
         blood_type     => 'A',
         hometown       => '新潟県',
         emoticon       => ['从б_бﾘ', 'ﾘo´ｩ｀ﾘ'],
         class          => 7,
-        graduate_date  => Date::Simple->new('2009-12-06'),
+        graduate_date  => $_[0]->_datetime_from_date('2009-12-06'),
     );
 }
 

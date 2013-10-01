@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Natsumi',
         family_name_en => 'Abe',
         nick           => [qw(なっち)],
-        birthday       => Date::Simple->new('1981-08-10'),
+        birthday       => $_[0]->_datetime_from_date('1981-08-10'),
         blood_type     => 'A',
         hometown       => '北海道',
         emoticon       => ['（●´ー｀●）'],
         class          => 1,
-        graduate_date  => Date::Simple->new('2004-01-25'),
+        graduate_date  => $_[0]->_datetime_from_date('2004-01-25'),
     );
 }
 

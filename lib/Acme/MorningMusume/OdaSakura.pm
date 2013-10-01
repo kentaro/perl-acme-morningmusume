@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Sakura',
         family_name_en => 'Oda',
         nick           => [qw(さくらっきょ さくら)],
-        birthday       => Date::Simple->new('1999-03-12'),
+        birthday       => $_[0]->_datetime_from_date('1999-03-12'),
         blood_type     => 'A',
         hometown       => '神奈川県',
         emoticon       => [''],

@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Mizuki',
         family_name_en => 'Fukumura',
         nick           => [qw(フクちゃん みーちゃん みず☆ポン)],
-        birthday       => Date::Simple->new('1996-10-30'),
+        birthday       => $_[0]->_datetime_from_date('1996-10-30'),
         blood_type     => 'O',
         hometown       => '東京都',
         emoticon       => ['ノﾉ∮‘ _l‘）'],

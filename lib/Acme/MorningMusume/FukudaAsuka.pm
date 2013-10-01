@@ -14,12 +14,12 @@ sub info {
         first_name_en  => 'Asuka',
         family_name_en => 'Fukuda',
         nick           => [qw(あすか 焼き銀杏)],
-        birthday       => Date::Simple->new('1984-12-17'),
+        birthday       => $_[0]->_datetime_from_date('1984-12-17'),
         blood_type     => 'B',
         hometown       => '東京都',
         emoticon       => ['（0゜-゜0）'],
         class          => 1,
-        graduate_date  => Date::Simple->new('1999-04-18'),
+        graduate_date  => $_[0]->_datetime_from_date('1999-04-18'),
     );
 }
 

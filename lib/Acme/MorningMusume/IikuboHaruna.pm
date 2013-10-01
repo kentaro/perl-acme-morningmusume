@@ -14,7 +14,7 @@ sub info {
         first_name_en  => 'Haruna',
         family_name_en => 'Iikubo',
         nick           => [qw(はるなん)],
-        birthday       => Date::Simple->new('1994-11-07'),
+        birthday       => $_[0]->_datetime_from_date('1994-11-07'),
         blood_type     => 'O',
         hometown       => '東京都',
         emoticon       => [''],
