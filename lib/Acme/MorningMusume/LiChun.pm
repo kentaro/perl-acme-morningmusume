@@ -5,7 +5,7 @@ use warnings;
 
 use base qw(Acme::MorningMusume::Base);
 
-our $VERSION = '0.02';
+our $VERSION = '0.16';
 
 sub info {
     return (

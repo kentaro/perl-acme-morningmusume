@@ -1,10 +1,13 @@
-Revision history for Perl extension Acme::MorningMusume.
-
 {{$NEXT}}
 
-0.16  Mon Sep 30 2013
-    - modified the data of Kudoh Haruka and Oda Sakura
+0.16 2013-10-01T15:06:17Z
+
+  Revision history for Perl extension Acme::MorningMusume
+
+0.16  Tue Oct 02 2013
+    - updated the data of Kudoh Haruka and Oda Sakura
       (Thanks to catatsuy)
+    - removed old dependencies that hadn't work
 
 0.15  Mon May 27 2013
     - updated ReinaTanaka.pm along with her graduation from Morning Musume on May 21 2013
