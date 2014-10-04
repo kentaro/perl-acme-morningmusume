@@ -43,6 +43,10 @@ my @members = qw(
     SatohMasaki
     KudohHaruka
     OdaSakura
+    OgataHaruna
+    NonakaMiki
+    MakinoMaria
+    HagaAkane
 );
 
 my @date_joined = map {
