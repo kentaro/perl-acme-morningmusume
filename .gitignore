@@ -11,3 +11,5 @@ covered
 !Build/
 !META.json
 !LICENSE
+cpanfile.snapshot
+local/
