@@ -5,7 +5,7 @@ use warnings;
 use DateTime;
 use base qw(Class::Accessor);
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 __PACKAGE__->mk_accessors(qw(
     name_ja

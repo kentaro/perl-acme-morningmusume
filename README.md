@@ -35,48 +35,48 @@ with Morning Musume.
 
 ## new
 
-        my $musume = Acme::MorningMusume->new;
-
-    Creates and returns a new Acme::MorningMusume object.
+>     my $musume = Acme::MorningMusume->new;
+>
+> Creates and returns a new Acme::MorningMusume object.
 
 ## members ( $type )
 
-        # $type can be one of the values below:
-        #  + active              : active members
-        #  + graduate            : graduate members
-        #  + DateTime object     : members at the time passed in
-        #  + undef               : all members
-
-        my @members = $musume->members('active');
-
-    Returns the members as a list of the [Acme::MorningMusume::Base](http://search.cpan.org/perldoc?Acme::MorningMusume::Base)
-    based object represents each member. See also the documentation of
-    [Acme::MorningMusume::Base](http://search.cpan.org/perldoc?Acme::MorningMusume::Base) for more details.
+>     # $type can be one of the values below:
+>     #  + active              : active members
+>     #  + graduate            : graduate members
+>     #  + DateTime object     : members at the time passed in
+>     #  + undef               : all members
+>
+>     my @members = $musume->members('active');
+>
+> Returns the members as a list of the [Acme::MorningMusume::Base](https://metacpan.org/pod/Acme::MorningMusume::Base)
+> based object represents each member. See also the documentation of
+> [Acme::MorningMusume::Base](https://metacpan.org/pod/Acme::MorningMusume::Base) for more details.
 
 ## sort ( $type, $order \[ , @members \] )
 
-        # $type can be one of the values below:
-        #  + age   :  sort by age
-        #  + class :  sort by class
-        #
-        # $order can be a one of the values below:
-        #  + something true value  :  sort in descending order
-        #  + something false value :  sort in ascending order
-
-        my @sorted_members = $musume->sort('age', 1); # sort by age in descending order
-
-    Returns the members sorted by the _$type_ field.
+>     # $type can be one of the values below:
+>     #  + age   :  sort by age
+>     #  + class :  sort by class
+>     #
+>     # $order can be a one of the values below:
+>     #  + something true value  :  sort in descending order
+>     #  + something false value :  sort in ascending order
+>
+>     my @sorted_members = $musume->sort('age', 1); # sort by age in descending order
+>
+> Returns the members sorted by the _$type_ field.
 
 ## select ( $type, $number, $operator \[, @members\] )
 
-        # $type can be one of the same values above:
-        my @selected_members = $musume->select('age', 18, '>=');
-
-    Returns the members satisfy the given _$type_ condition. _$operator_
-    must be a one of '==', '>=', '<=', '>', and '<'. This method compares
-    the given _$type_ to the member's one in the order below:
-
-        $number $operator $member_value
+>     # $type can be one of the same values above:
+>     my @selected_members = $musume->select('age', 18, '>=');
+>
+> Returns the members satisfy the given _$type_ condition. _$operator_
+> must be a one of '==', '>=', '<=', '>', and '<'. This method compares
+> the given _$type_ to the member's one in the order below:
+>
+>     $number $operator $member_value
 
 # SEE ALSO
 
@@ -86,9 +86,9 @@ with Morning Musume.
 
 - Morning Musume - Wikipedia
 
-    [http://en.wikipedia.org/wiki/Morning\_Musume](http://en.wikipedia.org/wiki/Morning\_Musume)
+    [http://en.wikipedia.org/wiki/Morning\_Musume](http://en.wikipedia.org/wiki/Morning_Musume)
 
-- [Acme::MorningMusume::Base](http://search.cpan.org/perldoc?Acme::MorningMusume::Base)
+- [Acme::MorningMusume::Base](https://metacpan.org/pod/Acme::MorningMusume::Base)
 
 # AUTHOR
 
