@@ -4,7 +4,7 @@
       "=over 4"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.3, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "unknown"
    ],
@@ -33,7 +33,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build::Tiny" : "0.035"
          }
       },
       "develop" : {
@@ -55,16 +55,16 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://ssh///git@github.com/kentaro/perl-acme-morningmusume/issues"
+         "web" : "https://github.com/kentaro/perl-acme-morningmusume/issues"
       },
-      "homepage" : "https://ssh///git@github.com/kentaro/perl-acme-morningmusume",
+      "homepage" : "https://github.com/kentaro/perl-acme-morningmusume",
       "repository" : {
          "type" : "git",
-         "url" : "git://ssh///git@github.com/kentaro/perl-acme-morningmusume.git",
-         "web" : "https://ssh///git@github.com/kentaro/perl-acme-morningmusume"
+         "url" : "git://github.com/kentaro/perl-acme-morningmusume.git",
+         "web" : "https://github.com/kentaro/perl-acme-morningmusume"
       }
    },
-   "version" : "0.18",
+   "version" : "0.19",
    "x_contributors" : [
       "Kentaro Kuribayashi <kentarok@gmail.com>",
       "kazusuke sasezaki <sasezaki+github@gmail.com>",
