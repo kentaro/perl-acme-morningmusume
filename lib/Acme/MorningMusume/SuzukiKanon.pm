@@ -19,7 +19,7 @@ sub info {
         hometown       => '愛知県',
         emoticon       => ['从*´◇｀）'],
         class          => 9,
-        graduate_date  => undef,
+        graduate_date  => $_[0]->_datetime_from_date('2016-05-31'),
     );
 }
 
