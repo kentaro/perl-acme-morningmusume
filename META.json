@@ -64,10 +64,10 @@
          "web" : "https://github.com/kentaro/perl-acme-morningmusume"
       }
    },
-   "version" : "0.19",
+   "version" : "0.20",
    "x_contributors" : [
       "Kentaro Kuribayashi <kentarok@gmail.com>",
       "kazusuke sasezaki <sasezaki+github@gmail.com>",
-      "KANEKO Tatsuya <catatsuy@catatsuy.org>"
+      "catatsuy <catatsuy@catatsuy.org>"
    ]
 }

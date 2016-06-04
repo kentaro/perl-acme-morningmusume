@@ -6,7 +6,7 @@ use warnings;
 use Carp  qw(croak);
 use DateTime;
 
-our $VERSION = '0.19';
+our $VERSION = '0.20';
 
 my @members = qw(
     FukudaAsuka
